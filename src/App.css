@@ -1,0 +1,187 @@
+
+
+.m-auto{
+  margin-inline:auto ;
+}
+
+.m-top-20{
+  margin-top: 20px;
+}
+.m-bottom-10{
+  margin-bottom: 10px;
+}
+
+.flex-row{
+  display: flex;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.font-size-14{
+  font-size: 14px;
+}
+.display-none{
+  display: none;
+}
+.padding-10{
+  padding-inline: 10px;
+}
+ul{
+  font-size: 14px;
+  margin-left: 30px;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.align-center{
+  align-items: centerS;
+}
+
+.container{
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+
+}
+
+.header{
+  width: 100%;
+  padding-bottom: 10px;
+}
+.hero-content{
+  flex: 1;
+  gap: 10px;
+}
+.hero-image-container{
+  flex: 0.5;
+  padding-top: 50px;
+  display: flex;
+  margin-inline: 10px;
+  align-items: end;
+}
+.hero-image{
+  width: 100%;
+  margin-inline: 10px;
+}
+.logo{
+  width:250px;
+}
+.person-image{
+  width: 100%;
+}
+.bold{
+  font-weight: bold;
+}
+
+.semibold{
+  font-weight: 600;
+}
+
+.machines-container{
+  padding: 10px;
+}
+
+.machine-image{
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+hr{
+  border: 0.6px solid red;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.text-center{
+  text-align: center;
+}
+.gap{
+  gap: 16px;
+}
+
+footer{
+  background: red;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #fff;
+  margin-top: 16px;
+}
+
+footer>div{
+  gap: 4px;
+  align-items: center;
+}
+
+footer>div>span{
+ width: 30px;
+ height: 30px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+  border-radius: 100px;
+  background: #fff;
+}
+
+@media only screen and (max-width: 1200px) {
+  .machine-image{
+    width: 800px;
+  }
+  .container{
+    padding-inline: 20px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .machine-image{
+    width: 600px;
+  }
+  .container{
+    padding-inline: 20px;
+  }
+  .hero-image-container{
+    flex: 1;
+    display: none;
+  }
+  .hero-image{
+    width: 300px;
+  }
+  .award-container{
+    width: 30%;
+  } 
+  .person-image{
+    width: 70%;
+    object-fit: contain;
+  }
+  .display-none{
+    display: flex;
+  }
+  .award-image{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .machine-image{
+    width: 450px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .machine-image{
+    width: 350px;
+  }
+  .container{
+    padding-inline: 10px ;
+  }
+  footer{
+    flex-direction: column;
+    justify-content: space-around;
+    padding:4px 0 ;
+  }
+}
